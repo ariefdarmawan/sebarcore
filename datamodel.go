@@ -73,3 +73,7 @@ func (dm *DataModel) AddMethod(mtd reflect.Method) error {
 	dm.Methods = append(dm.Methods, m)
 	return nil
 }
+
+func (dm *DataModel) New() interface{} {
+	return reflect.New(dm.rtype).Interface()
+}

@@ -1,15 +1,12 @@
 package coretest
 
 import (
+	"eaciit/sebarcore"
+	"fmt"
+	"reflect"
 	"testing"
 
 	"github.com/eaciit/toolkit"
-
-	"eaciit/sebarcore"
-
-	"fmt"
-
-	"reflect"
 )
 
 type DummyModel struct {
